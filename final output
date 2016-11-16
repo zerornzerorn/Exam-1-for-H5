@@ -1,10 +1,4 @@
 
-<script>
-  $(document).ready(function(){
-    
-  });
-</script>
-
 <!-- Day1, inputting all elements in this code-->
 <!-- Day2 is to adjusting formats;
      Day2 added 5 div: page-title, page-photo-and-note, page-resume, page-other-reputation, page-more-info;
@@ -13,48 +7,73 @@
      Day2 add anchor to text"Wikipedia";
      Day2 add i to page-other-reputation;
      Day2 this maybe is final one
+     Day2 THE MOST IMPORTANT WORK IS TO DEFINE THE FRAME, USING DIV
 
 
 
 -->
 
 <style>
-  body{
-    background-color:#ccc;
-  }
-  
-  h1{
-    font-size:30px;
-    font-family:Momospace;
+  .box-outter{
+    border-radius:0px;
+    border-type:none;
+    border-width:0px;
     
+  }
+  .box-inner{
+    background-color:#ccc;
+    border-radius:10px; 
+    margin:50px 0px 50px 0px;
+    
+  }
+  h1{
+    font-size:48px;
+    font-family:Arial;      
   }
   h2{
      font-size:24px;
-     font-family:Monospace;
+     font-family:Arial;
      
   }
-  
-  P{
+  #page-photo-and-note{
+    background-color:white;
+    border-radius:5px;
+    margin:0px 40px 0px 40px;
+    padding:5px;
+  }
+  .box-image{
+    border-radius:5px;
+  }
+  p{
     font-size:12px;
     
   }
 </style>
 
-<body>
-  <div class="container-fluid">
+<div class="row container-fluid">
+  <div class="col-lg-1">
+  </div>
+  <div class="col-lg-10 box-inner container-fluid">
     <div id="page-title">
       <h1 class="text-center">Dr. Norman Borlaug</h1>
       <h2 class="text-center"><i>The man who saved a billion lives</i></h2>
     </div>
     
     <div id="page-photo-and-note">
-      <img class="img-responsive" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
-      <p> Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields -
+      <div>
+        <img class="img-responsive" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
+      </div>
+      <div>
+        <p style="font-size:16px" class="text-center" > Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields -
           part of his life-long war on hunger.</p>
+      </div>
     </div>  
-    <div id="page-resume">
-      <h3>Here's a time line of Dr. Borlaug's life</h3>
-      <ul> 
+    <div id="page-resume" class="row container-fluid">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 container-fluid">
+       <h3>Here's a time line of Dr. Borlaug's life</h3>
+       <ul> 
         <li><b>1914</b> - Born in Cresco, Iowa</li>
         <li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, 
                           thanks to a Depression era program known as the "National Youth Administration"</li>
@@ -86,16 +105,23 @@
                           it science, people were selecting the best breeds."</li>
         <li><b>2009</b> - dies at the age of 95.</li>
       </ul>
+        <div id="page-other-reputation">
+      <p style="font-size:20px">"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's
+          towering intellect, persistence and scientific vision can make to human peace and progress."</p>
+          <p style="font-size:16px"><i>Indian Prime Minister Manmohan Singh</i></p>
+       
     </div>
-    <div id="page-other-reputation">
-      <p><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's
-          towering intellect, persistence and scientific vision can make to human peace and progress."</i></p>
-      <p class="text-right">Indian Prime Minister Manmohan Singh</p>
+    <div id="page-more-info" style="margin:0px -30px"> 
+      <p style="font-size:22px">If you have time, you should read more about this incredible human being on his <a href="#">Wikipedia entry</a>.</p>
     </div>
-    <div id="page-more-info"> 
-      <p>If you have time, you should read more about this incredible human being on his <a href="#">Wikipedia</a> entry.</p>
+      </div>
+      <div>
+      </div>
     </div>
+    
      
   </div>
+  <div>
+  </div>
   
-</body>
+</div>
