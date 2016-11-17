@@ -9,7 +9,7 @@
      Day2 this maybe is final one
      Day2 THE MOST IMPORTANT WORK IS TO DEFINE THE FRAME, USING DIV
 
-
+     Day3 added comments to the div, to make it muach clear.
 
 -->
 
@@ -51,77 +51,92 @@
 </style>
 
 <div class="row container-fluid">
-  <div class="col-lg-1">
-  </div>
-  <div class="col-lg-10 box-inner container-fluid">
-    <div id="page-title">
+  <div class="col-lg-1">                   <!-- left blank area, adjustalbe according to width, no container-fluid classed-->
+    </div> 
+  <div class="col-lg-10 box-inner container-fluid"> <!-- main middle area, adjustable according to width, has container-fluid,
+                                     to kee the width stable when the overall width is too big.-->
+    <div id="page-title">                  <!-- the first components-->
       <h1 class="text-center">Dr. Norman Borlaug</h1>
       <h2 class="text-center"><i>The man who saved a billion lives</i></h2>
     </div>
     
-    <div id="page-photo-and-note">
+    <div id="page-photo-and-note">             <!-- the second component -->
       <div>
         <img class="img-responsive" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
       </div>
       <div>
-        <p style="font-size:16px" class="text-center" > Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields -
-          part of his life-long war on hunger.</p>
+        <p style="font-size:16px" class="text-center" > Dr. Norman Borlaug, second from left, 
+          trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</p>
       </div>
-    </div>  
-    <div id="page-resume" class="row container-fluid">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6 container-fluid">
-       <h3>Here's a time line of Dr. Borlaug's life</h3>
-       <ul> 
-        <li><b>1914</b> - Born in Cresco, Iowa</li>
-        <li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, 
+    </div>                              <!-- end of second component-->
+    
+    <div id="page-resume" class="row container-fluid"> <!-- start of thrid component-->
+      <div class="col-md-3">                  <!-- left blank-->
+        </div>
+      <div class="col-md-6 container-fluid">        <!-- 1st sub-div of main part of third component-->
+        <h3>Here's a time line of Dr. Borlaug's life</h3>
+        <ul> 
+          <li><b>1914</b> - Born in Cresco, Iowa</li>
+          <li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, 
                           thanks to a Depression era program known as the "National Youth Administration"</li>
-        <li><b>1935</b> - Has to stop school and save up more money. Works in the Civilian Conservation Corps,
-                          helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me." </li>  
-        <li><b>1937</b> - Finishes university and takes a job in the US Forestry Service</li>
-        <li><b>1938</b> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts.
+          <li><b>1935</b> - Has to stop school and save up more money. Works in the Civilian Conservation Corps,
+                          helping starving Americans. "I saw how food changed them", 
+                         he said. "All of this left scars on me." </li>  
+          <li><b>1937</b> - Finishes university and takes a job in the US Forestry Service</li>
+          <li><b>1938</b> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts.
                           Inspired by Elvin Charles Stakman, he returns to school study under Stakman, 
                           who teaches him about breeding pest-resistent plants.</li>
-        <li><b>1941</b> - Tries to enroll in the military after the Pearl Harbor attack, 
+          <li><b>1941</b> - Tries to enroll in the military after the Pearl Harbor attack, 
                           but is rejected. Instead, the military asked his lab to work on waterproof glue, 
                           DDT to control malaria, disenfectants, and other applied science.</li>
-        <li><b>1942</b> - Receives a Ph.D. in Genetics and Plant Pathology</li>
-        <li><b>1944</b> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, 
+          <li><b>1942</b> - Receives a Ph.D. in Genetics and Plant Pathology</li>
+          <li><b>1944</b> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, 
                           and flies to Mexico to head a new plant pathology program. Over the next 16 years, 
                           his team breeds 6,000 different strains of disease resistent wheat -
                           including different varieties for each major climate on Earth.</li>
-        <li><b>1945</b> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
-        <li><b>1953</b> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, 
-                          creating a strain that responds well to fertalizer. It goes on to provide 95% of Mexico's wheat.</li>
-        <li><b>1962</b> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent 
+          <li><b>1945</b> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
+          <li><b>1953</b> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, 
+                       creating a strain that responds well to fertalizer.
+                        It goes on to provide 95% of Mexico's wheat.</li>
+          <li><b>1962</b> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent 
                           in time to help mitigate mass starvation due to a rapidly expanding population</li>
-        <li><b>1970</b> - receives the Nobel Peace Prize</li>
-        <li><b>1983</b> - helps seven African countries dramatically increase their maize and sorghum yields</li>
-        <li><b>1984</b> - becomes a distinguished professor at Texas A&M University</li>
-        <li><b>2005</b> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops
-                          are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently 
-                          dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called 
-                          it science, people were selecting the best breeds."</li>
-        <li><b>2009</b> - dies at the age of 95.</li>
-      </ul>
-        <div id="page-other-reputation">
+          <li><b>1970</b> - receives the Nobel Peace Prize</li>
+          <li><b>1983</b> - helps seven African countries dramatically increase their maize and sorghum yields</li>
+          <li><b>1984</b> - becomes a distinguished professor at Texas A&M University</li>
+          <li><b>2005</b> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops
+                          are the only way we can meet the demand, as we run out of arable land. Says that GM crops are 
+                       not inherently dangerous because "we've been genetically modifying plants and animals for a long time.
+                       Long before we called it science, people were selecting the best breeds."</li>
+          <li><b>2009</b> - dies at the age of 95.</li>
+        </ul>                         <!-- end of 1st sub-div of middle part of third component-->
+        
+        <div id="page-other-reputation">       <!-- 2nd sub-div of middle part of third component-->
       <p style="font-size:20px">"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's
           towering intellect, persistence and scientific vision can make to human peace and progress."</p>
-          <p style="font-size:16px"><i>Indian Prime Minister Manmohan Singh</i></p>
-       
-    </div>
-    <div id="page-more-info" style="margin:0px -30px"> 
-      <p style="font-size:22px">If you have time, you should read more about this incredible human being on his <a href="#">Wikipedia entry</a>.</p>
-    </div>
+          <p style="font-size:16px"><i>Indian Prime Minister Manmohan Singh</i></p>    
+        </div>                        <!-- end of 2nd sub-div of middle part of third component-->
+        
+        <div id="page-more-info" style="margin:0px -30px 0px -30px">  <!-- 3rd sub-div of middle part of third component-->
+            <p style="font-size:22px">If you have time, you should read more about this incredible 
+              human being on his <a href="#">Wikipedia entry</a>.</p>
+        </div>                                     <!-- end of 3rd sub-div of third component-->
+        
+      </div>                                       <!-- end of the middle part of third component-->
+      
+      
+      <div>                                        <!-- right blank of  third component-->
       </div>
-      <div>
-      </div>
-    </div>
-    
+      
+      
+    </div>                                         <!-- end of the third component-->
+    <p></p>
+    <p></p>
+    <p class="text-center" style="margin: 50px 0px -50px 0px"> Coded by <a href="#">Zerorn Zerorn</a></p>
      
-  </div>
-  <div>
+  </div>                                           <!-- end of the main middle part-->
+  
+  
+  <div>                                            <!-- the right blank-->
   </div>
   
-</div>
+</div>                                              <!-- end of the page-->
